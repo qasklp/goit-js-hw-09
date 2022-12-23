@@ -53,7 +53,7 @@ function addLeadingZero(value, addingSymbols) {
 function handleClick() {
     timerId = setInterval(() => {
         let today = new Date();
-        ms = fp.selectedDates[0] - today;
+        let ms = fp.selectedDates[0] - today;
         let time = convertMs(ms);
         days.textContent = addLeadingZero(time.days,  0);
         hours.textContent = addLeadingZero(time.hours, 0);
