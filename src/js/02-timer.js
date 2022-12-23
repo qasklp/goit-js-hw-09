@@ -51,7 +51,7 @@ function addLeadingZero(value, addingSymbols) {
 }
 
 function handleClick() {
-    timerId = setInterval(() => {
+    const timerId = setInterval(() => {
         let today = new Date();
         let ms = fp.selectedDates[0] - today;
         let time = convertMs(ms);
